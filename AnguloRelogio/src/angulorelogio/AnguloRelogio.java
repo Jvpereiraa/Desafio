@@ -47,9 +47,15 @@ public class AnguloRelogio {
         } 
         anguloHoras = horas*30;
         anguloPecorridoHora = anguloMinutos/12;
-        anguloFinal = anguloMinutos - anguloHoras -anguloPecorridoHora;
+        if(anguloMinutos > anguloHoras){
+            anguloFinal = anguloMinutos - anguloHoras -anguloPecorridoHora;
+        }else{
+             anguloFinal = anguloHoras - anguloPecorridoHora -anguloMinutos;
+        }
+        
         if(anguloFinal < 0){
             
+          
             anguloFinal = 360 + anguloFinal;
             
         }
