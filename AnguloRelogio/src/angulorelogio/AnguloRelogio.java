@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 
+ *
+ * 
  */
 package angulorelogio;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author zelphy
+ * @author João Vitor Pereira
  */
 public class AnguloRelogio {
 
@@ -22,7 +22,7 @@ public class AnguloRelogio {
         int minutos,horas;
         AnguloRelogio angulo = new AnguloRelogio();
         long ang ;
-        // TODO code application logic here
+        // 
         do{
             System.out.println("Digite apenas as horas: " );
             horas = ler.nextInt();
