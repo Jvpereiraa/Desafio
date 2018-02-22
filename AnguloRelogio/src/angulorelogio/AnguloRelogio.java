@@ -36,7 +36,7 @@ public class AnguloRelogio {
    
         
         ang = angulo.retornaAnguloRelogio(horas, minutos);
-        System.out.println(ang);
+        System.out.println("Angulo entre o ponteiro das horas e dos minutos é de :" + ang + " graus");
     }
     
     public long retornaAnguloRelogio(int horas, int minutos){
