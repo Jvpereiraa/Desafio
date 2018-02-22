@@ -23,11 +23,16 @@ public class AnguloRelogio {
         AnguloRelogio angulo = new AnguloRelogio();
         long ang ;
         // TODO code application logic here
-        System.out.println("Digite apenas as horas: " );
-        horas = ler.nextInt();
+        do{
+            System.out.println("Digite apenas as horas: " );
+            horas = ler.nextInt();
+        } while((horas < 0) || (horas >= 24));
     
-        System.out.println("Digite apenas os minutos: " );
-        minutos = ler.nextInt();
+        do{
+            System.out.println("Digite apenas os minutos: " );
+            minutos = ler.nextInt();
+        
+        } while((minutos < 0) || (minutos >= 60));
    
         
         ang = angulo.retornaAnguloRelogio(horas, minutos);
@@ -44,7 +49,9 @@ public class AnguloRelogio {
         anguloPecorridoHora = anguloMinutos/12;
         anguloFinal = anguloMinutos - anguloHoras -anguloPecorridoHora;
         if(anguloFinal < 0){
+            
             anguloFinal = 360 + anguloFinal;
+            
         }
     
     return anguloFinal;
